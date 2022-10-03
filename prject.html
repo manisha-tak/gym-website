@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('hello.jpg');
+            color: white;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 24px;
+            top: 20px;
+            /*border: 2px solid yellow;*/
+        }
+        .mid{
+            display: block;
+            width: 33%;
+             margin: 20px auto;
+            /*border:2px solid green;*/
+        }
+        .left{
+            position: absolute;
+            left: 24px;
+            top: 20px;
+            display: inline-block;
+            /*border: 2px solid pink;*/
+        }
+        .left img{
+            width:136px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+        }
+        .newbar{
+            display: inline-block;
+        }
+        .newbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 12px;
+            font-size: 24px;
+        }
+        .newbar li a{
+            color: white;
+            text-decoration: none;
+        }
+        .newbar li a:hover ,newbar li a.active{
+            color: gray;
+            text-decoration: underline;
+        }
+        .btn{
+            background-color:black;
+            color: white;
+            margin: 0px 9px;
+            border: 10px;
+            font-size: 20px;
+        }
+        .btn:hover{
+            background-color: rgb(109, 83, 83);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container{
+            border: 2px solid rgb(102, 48, 85);
+            margin-top: 80px;
+            margin-left: 45px;
+            width: 33%;
+            height: 300px;
+            padding: 23px 60px ;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .formgrp input{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            display: block;
+            width: 43%;
+            margin:3px auto;
+            padding: 11px;
+            border-radius: 6px;
+            border: 2px solid black;
+            font-size: 20px;
+
+        }
+        .container h2{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 45%;
+            margin: auto;
+            border: 2px solid grey;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+    <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn">email</button>
+    </div>
+    <div class="mid">
+        
+            <ul class="newbar">
+                <li><a href="#"><div class="active"></div>home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">serivce</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+    </div>
+    <div class="left">
+        <img src="manni.png" alt="">
+        <div>
+            manni fitness
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <h2>join the best gym in Jodhpur</h2>
+        <form action="notation.php">
+            <div class="formgrp">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" placeholder="Age">
+            </div>
+            <div class="formgrp">
+                <input type="text" placeholder="Gender">
+            </div>
+            <div class="formgrp">
+                <input type="number" placeholder="number">
+            </div>
+            <br>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
